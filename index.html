@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DakatiaPost - Buy & Sell in Dakatia</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .post-btn {
+            background-color: #28a745;
+            color: white;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+  .card-text {
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DakatiaPost</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">All Ads</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Categories</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Furniture</a></li>
+                            <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
+                            <li><a class="dropdown-item" href="#">Vehicles</a></li>
+                            <li><a class="dropdown-item" href="#">Agriculture</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link post-btn btn" href="#">Post an Ad</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container my-5 text-center">
+        <h1 class="mb-3">Welcome to DakatiaPost</h1>
+        <p class="lead">Buy & Sell anything locally in Dakatia</p>
+        <a href="#" class="btn btn-success btn-lg">Post Your First Ad</a>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="container mb-4">
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search for products..." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Filter</h5>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Category</label>
+                        <select class="form-select">
+                            <option selected>All</option>
+                            <option value="1">Electronics</option>
+                            <option value="2">Furniture</option>
+                            <option value="3">Mobile Phones</option>
+                            <option value="4">Vehicles</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Price Range</label>
+                        <input type="text" class="form-control" placeholder="e.g. 1000-5000">
+                    </div>
+                    <button class="btn btn-secondary w-100">Apply Filter</button>
+                </form>
+            </div>
+
+            <!-- Featured Products -->
+            <div class="col-md-9">
+                <h2 class="mb-4">Featured Products</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/User_Post_Ads/mobile.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Smartphone</h5>
+                                <p class="card-text">৳10,000 - Good condition, used only 6 months.
+                                ৳10,000 - Good condition, used only 6 months.৳10,000 - Good condition, used only 6 months.৳10,000 - Good condition, used only 6 months.৳10,000 - Good condition, used only 6 months.৳10,000 - Good condition, used only 6 months.৳10,000 - Good condition, used only 6 months.৳10,000 - Good condition, used only 6 months.
+                                </p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/User_Post_Ads/Wooden Table.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wooden Table</h5>
+                                <p class="card-text">৳3,500 - Handmade, very strong.</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/User_Post_Ads/Used-Bike-Buying-Guide-bike.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Used Bicycle</h5>
+                                <p class="card-text">৳2,000 - Needs light repair, good deal.৳2,000 - Needs light repair, good deal.৳2,000 - Needs light repair, good deal.৳2,000 - Needs light repair, good deal.</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container my-5">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? Reach out to us below.</p>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="your@email.com">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mb-0">&copy; 2025 DakatiaPost. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
